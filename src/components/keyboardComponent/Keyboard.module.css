@@ -1,0 +1,98 @@
+.keyboard {
+  margin-top: 10px;
+
+  display: grid;
+  grid-template-columns: repeat(30, 25px);
+  grid-template-rows: repeat(5, 50px);
+  grid-gap: 2px;
+  justify-content: space-between;
+  width: 850px;
+
+  font: normal 20px/31px Courier New, Fallback Courier New, monospace, serif;
+  background-color: gray;
+  border-radius: 5px;
+
+  padding: 10px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2px;
+}
+
+.btn {
+  grid-column: span 2;
+  border: 1px black solid;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn__gray {
+  background-color: whitesmoke;
+  font-size: 12px;
+}
+.back {
+  grid-column: span 4;
+}
+.tab {
+  grid-column: span 3;
+  text-align: start;
+}
+.caps {
+  grid-column: span 4;
+}
+.shiftL {
+  grid-column: span 5;
+}
+.shiftR {
+  grid-column: span 5;
+}
+.enter {
+  grid-column: span 4;
+}
+.btn__red {
+  background: #f59b99;
+}
+
+.btn__yellow {
+  background: #e2e0ad;
+}
+
+.btn__lightGreen {
+  background-color: lightgreen;
+}
+
+.btn__blue {
+  background: #ade2de;
+}
+
+.btn__pinc {
+  background: #dfade2;
+}
+
+.btn__darkRed {
+  background: #e1afae;
+}
+
+.btn__lightYellow {
+  background-color: lightyellow;
+}
+
+.btn__green {
+  background: #ade3b0;
+}
+.greenWidth {
+  grid-column: span 3;
+}
+.btn__purple {
+  grid-column: span 18;
+  background-color: rgb(189, 90, 189);
+}
+
+.active {
+  background-color: red;
+}

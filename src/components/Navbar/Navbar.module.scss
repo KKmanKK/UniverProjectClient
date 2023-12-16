@@ -1,0 +1,47 @@
+
+.header{
+    background-color: #4C40D6;
+   &__inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+    height: 45px;
+   }
+   &__logo{
+    color: white;
+    text-decoration: none;
+   
+   }
+   &__info{
+    color: rgb(0, 0, 0);
+   }
+}
+.list{
+    display: flex;
+    gap: 20px;
+   div{
+    cursor: pointer;
+   }
+   &__item{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    transition: all 0.2s ease 0s;
+    text-decoration: none;
+    &:hover{
+        background-color: #887dfcce;
+        color: white;
+    }
+    &:hover a{
+        color: white;
+    }
+   }
+   &__link{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s ease 0s;
+   }
+}

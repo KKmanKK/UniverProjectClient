@@ -1,0 +1,50 @@
+.wrapper {
+  border: 5px gray solid;
+  padding: 5px;
+  border-radius: 10px;
+
+  position: relative;
+  width: 1000px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  overflow: hidden;
+}
+
+.TextArea {
+  position: absolute;
+  right: -5px;
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+  width: 50%;
+}
+
+.textAreaDefault {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.blur {
+  background-color: gainsboro;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  opacity: 0.83;
+  left: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 40px;
+  font-weight: lighter;
+  overflow: visible;
+}
+
+.textItem {
+  font-size: 40px;
+  font-weight: lighter;
+  white-space: pre;
+}

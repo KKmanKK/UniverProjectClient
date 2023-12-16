@@ -1,0 +1,87 @@
+.popap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background-color: white;
+  width: 800px;
+  height: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5px;
+}
+.resultName {
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  border-bottom: 1px solid black;
+}
+.btns {
+  height: 10%;
+  padding: 5px;
+  gap: 10px;
+  display: flex;
+  justify-content: end;
+  border-top: 1px solid black;
+  button {
+    background: none;
+    border: none;
+    color: white;
+    padding: 5px;
+    background-color: #4c40d6;
+    transition: background-color 0.8s ease 0s;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #6e63e6;
+    }
+  }
+}
+
+.result {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: center;
+
+  .resultList {
+    display: flex;
+    gap: 5px;
+    justify-content: space-around;
+    height: 20%;
+    .resultItem {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      .resultText {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  .resultMetriks {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

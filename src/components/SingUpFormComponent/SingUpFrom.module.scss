@@ -1,0 +1,71 @@
+.main{
+    margin: 20px 0 0 0 ;
+    &__inner{
+        height: 600px;
+        border-radius: 10px;
+        background-color:  #4134d3b6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__title{
+        height: 15%;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 40px;
+    }
+    &__from{
+        height: 75%;
+        display: flex;
+        flex-direction: column;    
+        gap: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+       
+    }
+}
+
+.form{
+    &__item{
+        position: relative;
+        margin: 20px 0;
+        border-bottom: 2px solid white;
+        width: 300px;
+        label{
+            position: absolute;
+            top: 50%;
+            left: 0px;
+            transform: translateY(-50%);
+            pointer-events: none;
+            transition: all 0.3s ease 0s;
+        }
+        input{
+            width: 100%;
+            height: 50px;
+            background: transparent;
+            border: none;
+            outline: none;
+            padding: 0 35px 0 5px;
+            color: white;
+            &:focus ~ label,
+            &:valid ~ label{
+                top: -5px;
+            }
+        }
+        
+    }
+    &__btn{
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }   
+}
+.regLink{
+    text-decoration: none;
+    color: white;
+}

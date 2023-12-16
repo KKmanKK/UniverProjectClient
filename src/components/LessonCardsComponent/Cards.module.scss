@@ -1,0 +1,20 @@
+.main{
+    background-color: white;
+    height: fit-content;
+    width: 83%;
+    border-radius: 10px;
+    padding: 20px;
+    &__inner{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        @media (max-width:1200px) {
+            align-items: center;
+            justify-content: center;
+            
+        }
+    }
+    
+}

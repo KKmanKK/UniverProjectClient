@@ -1,0 +1,8 @@
+.timer{
+    border: solid gray  3px;
+    padding: 3px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    font-weight:bold;
+    font-size: larger;
+}
