@@ -63,7 +63,7 @@ export const Modal = (props: any) => {
           callback: function (value: any, index: any, values: any) {
             // console.log(
             //   (data.labels as ItemType[]).filter((el) => el !== undefined)
-            // );
+            // ) ;
             // console.log( generateLabels().map((el) => el.x)[index]);
             console.log(value);
             return generateLabels().map((el) => el.x)[index] !== undefined
